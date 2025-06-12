@@ -12,10 +12,6 @@ A solução é composta por múltiplos componentes desacoplados que se comunicam
  * Coletor de Dados (mqtt_coletor_db.py):
    * Um script Python robusto que se inscreve no tópico MQTT sensor_rio/renan/nivel.
    * Sua única função é ouvir as publicações do ESP32 e salvar cada leitura de nível do rio em um banco de dados SQLite (dados_rio.db), criando um histórico persistente.
- * Controlador da Simulação (controlador_chuva.py):
-   * Um segundo script Python que atua como o "cérebro climático".
-   * Ele consulta a API OpenWeatherMap para obter a previsão do tempo real.
-   * Com base na previsão, ele publica um comando (start_rain ou stop_rain) no tópico MQTT sensor_rio/renan/comando, controlando a simulação no ESP32.
  * Dashboard Preditivo (dashboard.py):
    * A interface principal do sistema, construída com Streamlit.
    * Ele lê os dados históricos e atuais do nível do rio diretamente do banco de dados dados_rio.db.
