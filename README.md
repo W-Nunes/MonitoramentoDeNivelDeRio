@@ -75,6 +75,7 @@ Passo 5: Iniciar o Dashboard (Navegador)
 
  * Abra o endereço http://localhost:8501 no seu navegador para interagir com o sistema.
 5. Estrutura dos Arquivos
+   
 .
 ├── src/main.ino                # Código do ESP32: publica nível e reage a comandos
 ├── gerar_dados.py              # Script para criar o dataset de treinamento
