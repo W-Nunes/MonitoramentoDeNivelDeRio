@@ -77,17 +77,17 @@ Passo 5: Iniciar o Dashboard (Navegador)
 5. Estrutura dos Arquivos
    
 .
-├── src/main.ino                # Código do ESP32: publica nível e reage a comandos
-├── gerar_dados.py              # Script para criar o dataset de treinamento
-├── treinar_modelo.py           # Script que treina e salva o modelo de ML
-├── mqtt_coletor_db.py          # Coleta dados do MQTT e salva no SQLite
-├── dashboard.py                # Aplicação principal do Streamlit
-├── modelo_enchente.pkl         # Arquivo do modelo de ML treinado
-├── dados_enchente.csv          # Dataset gerado para o treinamento
-├── dados_rio.db                # Banco de dados com as leituras em tempo real
-├── platformio.ini              # Configuração do projeto PlatformIO
-├── wokwi.toml                  # Configuração da simulação Wokwi
-└── diagram.json                # Definição do circuito eletrônico simulado
+├── src/main.ino                # Código do ESP32: publica nível e reage a comandos  
+├── gerar_dados.py              # Script para criar o dataset de treinamento  
+├── treinar_modelo.py           # Script que treina e salva o modelo de ML  
+├── mqtt_coletor_db.py          # Coleta dados do MQTT e salva no SQLite  
+├── dashboard.py                # Aplicação principal do Streamlit  
+├── modelo_enchente.pkl         # Arquivo do modelo de ML treinado  
+├── dados_enchente.csv          # Dataset gerado para o treinamento  
+├── dados_rio.db                # Banco de dados com as leituras em tempo real  
+├── platformio.ini              # Configuração do projeto PlatformIO  
+├── wokwi.toml                  # Configuração da simulação Wokwi  
+└── diagram.json                # Definição do circuito eletrônico simulado  
 
 6. Próximos Passos e Melhorias
  * Hardware Real: Substituir a simulação do Wokwi por um ESP32 e um sensor HC-SR04 físicos.
